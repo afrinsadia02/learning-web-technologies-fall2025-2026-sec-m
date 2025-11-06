@@ -1,0 +1,17 @@
+<students>
+    <student>
+        <slno>23</slno>
+        <name>johncarter</name>
+        <admissiondate>25/12/2015</admissiondate>
+    </student>
+    <student>
+        <slno>29</slno>
+        <name>bobmarshal</name>
+        <admissiondate>13/01/1999</admissiondate>
+    </student>
+    <student>
+        <slno>35</slno>
+        <name>clarkkent</name>
+        <admissiondate>17/06/2005</admissiondate>
+    </student>
+</students>
