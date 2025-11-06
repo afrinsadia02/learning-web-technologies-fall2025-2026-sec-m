@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee>
+        <id>1</id>
+        <name>johndoe</name>
+        <address>h#38,r#3,banani,dhaka</address>
+        <department>sales</department>
+        <salary>20000</salary>
+    </employee>
+    <employee>
+        <id>2</id>
+        <name>markzuckerberg</name>
+        <address>flat#a/1,h#20,r#18,mirpur,dhaka</address>
+        <department>accounts</department>
+        <salary>12000</salary>
+    </employee>
+    <employee>
+        <id>3</id>
+        <name>alavoski</name>
+        <address>h#38,r#3,motijheel</address>
+        <department>humanresource</department>
+        <salary>30000</salary>
+    </employee>
+</employees>
