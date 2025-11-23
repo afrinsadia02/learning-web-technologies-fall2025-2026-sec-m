@@ -1,0 +1,51 @@
+<html>
+<head><title>Name Validation</title></head>
+    <body>
+
+        <form>
+            <label>Name</label><br><br>
+            <input type="text" id="name"><br>
+            <p id="error"></p>
+            <input type="button" value="Submit" onclick="validation()">
+        </form>
+
+        <script>
+        function validation(){
+            let name = document.getElementById("name").value.trim();
+            let nError = document.getElementById("error");
+
+            if(name === ""){
+                nError.innerHTML = "Name cannot be empty";
+                nError.style.color = "red";
+                return;
+            }
+
+            let words = name.split(" ");
+            if(words.length < 2){
+                nError.innerHTML = "Must contain at least two words";
+                nError.style.color = "red";
+                return;
+            }
+
+            if(!((name[0]>='A' && name[0]<='Z') || (name[0]>='a' && name[0]<='z'))){
+                nError.innerHTML = "Must start with a letter";
+                nError.style.color = "red";
+                return;
+            }
+
+            for(let i=0; i<name.length; i++){
+                let ch = name[i].toLowerCase();
+                if(!((ch>='a' && ch<='z') || ch==' ' || ch=='.' || ch=='-')){
+                    nError.innerHTML = "Invalid character found";
+                    nError.style.color = "red";
+                    return;
+                }
+            }
+
+            nError.innerHTML = "Valid name";
+            nError.style.color = "green";
+        }
+        </script>
+
+    </body>
+</html>
