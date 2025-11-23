@@ -7,18 +7,16 @@
         <form>
             <fieldset>
                 <legend>Profile Picture</legend>
-
                 <label>User Id</label>
                 <input type="text" id="userId" name="userId">
                 <br><br>
-
                 <label>Picture</label>
                 <input type="file" id="profilePicture" name="profilePicture" accept="image/jpeg,image/png,image/jpg">
                 <br><br>
-
-                <p id="pError"></p>
-                <input type="button" value="Submit" onclick="validation()">
-            </fieldset>            
+            </fieldset>     
+            
+            <p id="pError"></p>
+            <input type="button" value="Submit" onclick="validation()">
         </form>
 
         <script>
@@ -50,6 +48,5 @@
                 pError.style.color = "green";
             }
         </script>
-
     </body>
 </html>
